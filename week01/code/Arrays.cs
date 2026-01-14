@@ -13,7 +13,15 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        return []; // replace this return statement with your own
+        // Create a results list, then iterate through the length of the list, multiplying the number
+        // by the count and adding it to the results.
+        var results = new double[length];
+        for (int index = 0; index < length; index++)
+        {
+            results[index] = (index + 1) * number;
+        }
+
+        return results; // replace this return statement with your own
     }
 
     /// <summary>
@@ -29,5 +37,13 @@ public static class Arrays
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
+
+        // Remove the value from the end of list and add to the beginning of the list, repeat this process for amount.
+        for (int count = 1; count <= amount; count++)
+        {
+            int endValue = data[data.Count - 1];
+            data.RemoveAt(data.Count - 1);
+            data.Insert(0, endValue);
+        }
     }
 }

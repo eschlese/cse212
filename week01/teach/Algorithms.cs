@@ -52,8 +52,8 @@ public static class Algorithms {
     private static int Algorithm2(int size) {
         var count = 0;
         for (var i = 0; i < size; ++i)
-        for (var j = 0; j < size; ++j)
-            count += 1;
+            for (var j = 0; j < size; ++j)
+                count += 1;
 
         return count;
     }
