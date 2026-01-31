@@ -1,15 +1,15 @@
 public class FeatureCollection
 {
-    public Feature[] features {get; set;}
+    public Feature[] Features {get; set;}
 }
 
 public class Feature
 {
-    public Properties properties {get; set;}
+    public Properties Properties {get; set;}
 }
 
 public class Properties
 {
-    public double mag {get; set;}
-    public string place {get; set;}
+    public double Mag {get; set;}
+    public string Place {get; set;}
 }
